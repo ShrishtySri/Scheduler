@@ -10,9 +10,8 @@ export default function Register() {
   const [passwordCheck, setPasswordCheck] = useState();
   const [displayName, setDisplayName] = useState();
   const [error, setError] = useState();
-
-   const { setUserData } = useContext(UserContext);
-   const history = useHistory();
+  const { setUserData } = useContext(UserContext);
+  const history = useHistory();
 
   const submit = async (e) => {
     e.preventDefault();
